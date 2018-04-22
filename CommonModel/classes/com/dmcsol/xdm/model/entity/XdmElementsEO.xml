@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="windows-1252" ?>
+<!DOCTYPE Entity SYSTEM "jbo_03_01.dtd">
+<!---->
+<Entity
+  xmlns="http://xmlns.oracle.com/bc4j"
+  Name="XdmElementsEO"
+  Version="12.2.1.12.24"
+  InheritPersonalization="merge"
+  DBObjectType="table"
+  DBObjectName="XDM_ELEMENTS"
+  AliasName="XdmElementsEO"
+  BindingStyle="OracleName"
+  RowClass="com.dmcsol.xdm.common.framework.EntityImpl">
+  <Attribute
+    Name="ElemKey"
+    ColumnName="ELEM_KEY"
+    SQLType="VARCHAR"
+    Type="oracle.jbo.domain.DBSequence"
+    ColumnType="NUMBER"
+    TableName="XDM_ELEMENTS"
+    PrimaryKey="true"
+    IsUpdateable="while_insert"
+    DefaultValue="@0"
+    Domain="oracle.jbo.domain.DBSequence"
+    RetrievedOnInsert="true"
+    RetrievedOnUpdate="true">
+    <DesignTime>
+      <Attr Name="_DisplaySize" Value="10"/>
+    </DesignTime>
+  </Attribute>
+  <Attribute
+    Name="SuplId"
+    Precision="12"
+    Scale="0"
+    ColumnName="SUPL_ID"
+    SQLType="NUMERIC"
+    Type="java.lang.Long"
+    ColumnType="NUMBER"
+    TableName="XDM_ELEMENTS"/>
+  <Attribute
+    Name="Description"
+    Precision="250"
+    ColumnName="DESCRIPTION"
+    SQLType="VARCHAR"
+    Type="java.lang.String"
+    ColumnType="VARCHAR2"
+    TableName="XDM_ELEMENTS">
+    <DesignTime>
+      <Attr Name="_DisplaySize" Value="250"/>
+    </DesignTime>
+  </Attribute>
+  <Attribute
+    Name="MaxPax"
+    Precision="5"
+    Scale="0"
+    ColumnName="MAX_PAX"
+    SQLType="NUMERIC"
+    Type="java.lang.Integer"
+    ColumnType="NUMBER"
+    TableName="XDM_ELEMENTS"/>
+  <AccessorAttribute
+    Name="XdmTasks"
+    Association="com.dmcsol.xdm.model.entity.assoc.XdmElemTaskFkAssoc"
+    AssociationEnd="com.dmcsol.xdm.model.entity.assoc.XdmElemTaskFkAssoc.XdmTasks"
+    AssociationOtherEnd="com.dmcsol.xdm.model.entity.assoc.XdmElemTaskFkAssoc.XdmElements"
+    Type="oracle.jbo.RowIterator"
+    IsUpdateable="false"/>
+  <Key
+    Name="XdmElementsPk"
+    PrimaryKey="true">
+    <DesignTime>
+      <Attr Name="_DBObjectName" Value="XDM_ELEMENTS_PK"/>
+    </DesignTime>
+    <AttrArray Name="Attributes">
+      <Item Value="com.dmcsol.xdm.model.entity.XdmElementsEO.ElemKey"/>
+    </AttrArray>
+  </Key>
+</Entity>
