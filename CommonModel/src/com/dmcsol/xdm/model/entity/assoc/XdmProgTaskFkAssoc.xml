@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="windows-1252" ?>
+<!DOCTYPE Association SYSTEM "jbo_03_01.dtd">
+<!---->
+<Association
+  xmlns="http://xmlns.oracle.com/bc4j"
+  Name="XdmProgTaskFkAssoc"
+  Version="12.2.1.12.24"
+  InheritPersonalization="merge">
+  <DesignTime>
+    <Attr Name="_isCodegen" Value="true"/>
+  </DesignTime>
+  <AssociationEnd
+    Name="XdmProgrammes"
+    Cardinality="1"
+    Source="true"
+    Owner="com.dmcsol.xdm.model.entity.XdmProgrammesEO">
+    <DesignTime>
+      <Attr Name="_isUpdateable" Value="true"/>
+      <Attr Name="_aggregation" Value="0"/>
+      <Attr Name="_finderName" Value="XdmProgrammes"/>
+      <Attr Name="_foreignKey" Value="com.dmcsol.xdm.model.entity.XdmProgrammesEO.XdmProgrammesPk"/>
+    </DesignTime>
+    <AttrArray Name="Attributes">
+      <Item Value="com.dmcsol.xdm.model.entity.XdmProgrammesEO.ProgId"/>
+    </AttrArray>
+  </AssociationEnd>
+  <AssociationEnd
+    Name="XdmTasks"
+    Cardinality="-1"
+    Owner="com.dmcsol.xdm.model.entity.XdmTasksEO">
+    <DesignTime>
+      <Attr Name="_isUpdateable" Value="true"/>
+      <Attr Name="_aggregation" Value="0"/>
+      <Attr Name="_finderName" Value="XdmTasks"/>
+      <Attr Name="_foreignKey" Value="com.dmcsol.xdm.model.entity.XdmTasksEO.XdmProgTaskFk"/>
+    </DesignTime>
+    <AttrArray Name="Attributes">
+      <Item Value="com.dmcsol.xdm.model.entity.XdmTasksEO.ProgId"/>
+    </AttrArray>
+  </AssociationEnd>
+</Association>

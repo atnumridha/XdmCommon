@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="windows-1252" ?>
+<!---->
+<BC4JConfig xmlns="http://xmlns.oracle.com/bc4j/configuration" version="11.1">
+  <AppModuleConfigBag ApplicationName="com.dmcsol.xdm.model.service.TestXdmCommonModel">
+    <AppModuleConfig name="TestXdmCommonModelLocal" jbo.project="com.dmcsol.xdm.model.CommonModel"
+                     ApplicationName="com.dmcsol.xdm.model.service.TestXdmCommonModel" DeployPlatform="LOCAL">
+      <Database jbo.TypeMapEntries="OracleApps" JDBCDataSource="java:comp/env/jdbc/XdmDS"/>
+      <Security AppModuleJndiName="com.dmcsol.xdm.model.service.TestXdmCommonModel"/>
+    </AppModuleConfig>
+    <AppModuleConfig name="TestXdmCommonModelShared" jbo.project="com.dmcsol.xdm.model.CommonModel"
+                     ApplicationName="com.dmcsol.xdm.model.service.TestXdmCommonModel" DeployPlatform="LOCAL">
+      <AM-Pooling jbo.ampool.maxpoolsize="1" jbo.ampool.isuseexclusive="false"/>
+      <Database jbo.TypeMapEntries="OracleApps" JDBCDataSource="java:comp/env/jdbc/XdmDS"/>
+      <Security AppModuleJndiName="com.dmcsol.xdm.model.service.TestXdmCommonModel"/>
+    </AppModuleConfig>
+  </AppModuleConfigBag>
+  <AppModuleConfigBag ApplicationName="com.dmcsol.xdm.model.service.XdmLovService">
+    <AppModuleConfig name="XdmLovServiceLocal" jbo.project="com.dmcsol.xdm.model.CommonModel"
+                     ApplicationName="com.dmcsol.xdm.model.service.XdmLovService" DeployPlatform="LOCAL">
+      <Database jbo.TypeMapEntries="OracleApps" JDBCDataSource="java:comp/env/jdbc/XdmDS"/>
+      <Security AppModuleJndiName="com.dmcsol.xdm.model.service.XdmLovService"/>
+    </AppModuleConfig>
+    <AppModuleConfig name="XdmLovServiceShared" jbo.project="com.dmcsol.xdm.model.CommonModel"
+                     ApplicationName="com.dmcsol.xdm.model.service.XdmLovService" DeployPlatform="LOCAL">
+      <AM-Pooling jbo.ampool.maxpoolsize="1" jbo.ampool.isuseexclusive="false"/>
+      <Database jbo.TypeMapEntries="OracleApps" JDBCDataSource="java:comp/env/jdbc/XdmDS"/>
+      <Security AppModuleJndiName="com.dmcsol.xdm.model.service.XdmLovService"/>
+    </AppModuleConfig>
+  </AppModuleConfigBag>
+</BC4JConfig>
