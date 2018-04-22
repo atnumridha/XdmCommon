@@ -76,20 +76,6 @@
       <Attr Name="_DisplaySize" Value="1"/>
     </DesignTime>
   </Attribute>
-  <AccessorAttribute
-    Name="XdmProgrammes"
-    Association="com.dmcsol.xdm.model.entity.assoc.XdmProgPersFkAssoc"
-    AssociationEnd="com.dmcsol.xdm.model.entity.assoc.XdmProgPersFkAssoc.XdmProgrammes"
-    AssociationOtherEnd="com.dmcsol.xdm.model.entity.assoc.XdmProgPersFkAssoc.XdmPersons"
-    Type="oracle.jbo.RowIterator"
-    IsUpdateable="false"/>
-  <AccessorAttribute
-    Name="XdmTasks"
-    Association="com.dmcsol.xdm.model.entity.assoc.XdmPersTaskFkAssoc"
-    AssociationEnd="com.dmcsol.xdm.model.entity.assoc.XdmPersTaskFkAssoc.XdmTasks"
-    AssociationOtherEnd="com.dmcsol.xdm.model.entity.assoc.XdmPersTaskFkAssoc.XdmPersons"
-    Type="oracle.jbo.RowIterator"
-    IsUpdateable="false"/>
   <Key
     Name="XdmPersInitialsUk">
     <DesignTime>

@@ -15,14 +15,10 @@
     Name="ElemKey"
     ColumnName="ELEM_KEY"
     SQLType="VARCHAR"
-    Type="oracle.jbo.domain.DBSequence"
+    Type="java.lang.String"
     ColumnType="NUMBER"
     TableName="XDM_ELEMENTS"
     PrimaryKey="true"
-    IsUpdateable="while_insert"
-    DefaultValue="@0"
-    Domain="oracle.jbo.domain.DBSequence"
-    RetrievedOnInsert="true"
     RetrievedOnUpdate="true">
     <DesignTime>
       <Attr Name="_DisplaySize" Value="10"/>

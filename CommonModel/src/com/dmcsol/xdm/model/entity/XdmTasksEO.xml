@@ -152,27 +152,6 @@
       <Attr Name="_DisplaySize" Value="1"/>
     </DesignTime>
   </Attribute>
-  <AccessorAttribute
-    Name="XdmElements"
-    Association="com.dmcsol.xdm.model.entity.assoc.XdmElemTaskFkAssoc"
-    AssociationEnd="com.dmcsol.xdm.model.entity.assoc.XdmElemTaskFkAssoc.XdmElements"
-    AssociationOtherEnd="com.dmcsol.xdm.model.entity.assoc.XdmElemTaskFkAssoc.XdmTasks"
-    Type="com.dmcsol.xdm.common.framework.EntityImpl"
-    IsUpdateable="true"/>
-  <AccessorAttribute
-    Name="XdmPersons"
-    Association="com.dmcsol.xdm.model.entity.assoc.XdmPersTaskFkAssoc"
-    AssociationEnd="com.dmcsol.xdm.model.entity.assoc.XdmPersTaskFkAssoc.XdmPersons"
-    AssociationOtherEnd="com.dmcsol.xdm.model.entity.assoc.XdmPersTaskFkAssoc.XdmTasks"
-    Type="com.dmcsol.xdm.common.framework.EntityImpl"
-    IsUpdateable="true"/>
-  <AccessorAttribute
-    Name="XdmProgrammes"
-    Association="com.dmcsol.xdm.model.entity.assoc.XdmProgTaskFkAssoc"
-    AssociationEnd="com.dmcsol.xdm.model.entity.assoc.XdmProgTaskFkAssoc.XdmProgrammes"
-    AssociationOtherEnd="com.dmcsol.xdm.model.entity.assoc.XdmProgTaskFkAssoc.XdmTasks"
-    Type="com.dmcsol.xdm.common.framework.EntityImpl"
-    IsUpdateable="true"/>
   <Key
     Name="XdmTasksCxlChk">
     <DesignTime>

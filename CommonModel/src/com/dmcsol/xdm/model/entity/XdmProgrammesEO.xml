@@ -59,20 +59,6 @@
     Type="java.lang.Long"
     ColumnType="NUMBER"
     TableName="XDM_PROGRAMMES"/>
-  <AccessorAttribute
-    Name="XdmPersons"
-    Association="com.dmcsol.xdm.model.entity.assoc.XdmProgPersFkAssoc"
-    AssociationEnd="com.dmcsol.xdm.model.entity.assoc.XdmProgPersFkAssoc.XdmPersons"
-    AssociationOtherEnd="com.dmcsol.xdm.model.entity.assoc.XdmProgPersFkAssoc.XdmProgrammes"
-    Type="com.dmcsol.xdm.common.framework.EntityImpl"
-    IsUpdateable="true"/>
-  <AccessorAttribute
-    Name="XdmTasks"
-    Association="com.dmcsol.xdm.model.entity.assoc.XdmProgTaskFkAssoc"
-    AssociationEnd="com.dmcsol.xdm.model.entity.assoc.XdmProgTaskFkAssoc.XdmTasks"
-    AssociationOtherEnd="com.dmcsol.xdm.model.entity.assoc.XdmProgTaskFkAssoc.XdmProgrammes"
-    Type="oracle.jbo.RowIterator"
-    IsUpdateable="false"/>
   <Key
     Name="XdmProgrammesPk"
     PrimaryKey="true">
